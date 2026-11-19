@@ -1,0 +1,158 @@
+<!-- PO Shifo landing page. Paste into Google Sites: Insert > Embed > Embed code. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--ink:#14231f;--river:#1f6f8b;--deep:#0f3d3a;--field:#e9efe6;--paper:#f7f9f5;--wheat:#b8892f;--line:#cdd8cc;--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:17px/1.6 var(--sans);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--wheat);outline-offset:2px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{background:var(--deep);color:#fff}
+nav .wrap{display:flex;gap:22px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav b{font-family:var(--serif);font-size:20px;margin-right:auto}
+nav a{text-decoration:none;font-size:15px;opacity:.9}
+nav a:hover{text-decoration:underline}
+.hero{background:var(--deep);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:linear-gradient(90deg,var(--river),var(--wheat))}
+h1{font:700 clamp(34px,6vw,60px)/1.08 var(--serif);margin:0 0 18px;max-width:15em;letter-spacing:-.01em}
+.hero p{max-width:36em;font-size:19px;color:#dbe8e3;margin:0 0 28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:600;text-decoration:none;margin:0 10px 10px 0}
+.btn.main{background:var(--wheat);color:#1a1405}
+.btn.alt{border:2px solid #9fc2bb;color:#fff}
+section{padding:56px 0}
+section.tint{background:var(--field)}
+h2{font:700 clamp(26px,4vw,36px)/1.15 var(--serif);margin:0 0 16px}
+.lead{max-width:40em;margin:0 0 24px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;margin-top:28px}
+.stats div{border-top:4px solid var(--river);padding-top:10px}
+.stats strong{display:block;font:700 34px/1.1 var(--serif);color:var(--deep)}
+.tiers{display:grid;gap:0;margin-top:26px}
+.tier{padding:22px 24px;border-left:6px solid var(--river);background:#fff;margin-bottom:14px;border-radius:0 8px 8px 0}
+.tier:nth-child(2){margin-left:clamp(0px,5vw,56px);border-color:var(--wheat)}
+.tier:nth-child(3){margin-left:clamp(0px,10vw,112px);border-color:var(--deep)}
+.tier h3{font:700 21px/1.2 var(--serif);margin:0 0 6px}
+.tier p{margin:0}
+.note{margin-top:18px;font-style:italic;max-width:40em}
+.basin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;margin-top:24px;align-items:start}
+.river{position:relative;padding-left:26px}
+.river:before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:4px;border-radius:2px;background:linear-gradient(var(--river),#7fb6c9)}
+.river h3{font:700 15px/1.3 var(--sans);margin:18px 0 6px;color:var(--deep)}
+.river h3:first-of-type{margin-top:0}
+.river .sub{display:block;font:700 18px/1.3 var(--serif);margin:0 0 10px;color:var(--river)}
+.river button{display:block;position:relative;width:100%;text-align:left;font:inherit;background:none;border:0;padding:6px 8px;border-radius:6px;cursor:pointer;color:var(--ink)}
+.river button:before{content:"";position:absolute;left:-25px;top:15px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:3px solid var(--river)}
+.river button:hover{background:#fff}
+.river button[aria-pressed=true]{background:#fff;font-weight:700;box-shadow:inset 3px 0 0 var(--wheat)}
+.river button[aria-pressed=true]:before{background:var(--wheat);border-color:var(--wheat)}
+.detail{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;position:sticky;top:12px}
+.detail h3{font:700 26px/1.2 var(--serif);margin:0 0 4px}
+.detail .where{color:var(--river);font-weight:600;margin:0 0 14px}
+.detail .focus{border-top:1px solid var(--line);margin-top:16px;padding-top:14px;font-size:15px}
+.targets{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:22px}
+.targets div{background:#fff;border-radius:8px;padding:18px;border:1px solid var(--line)}
+.targets strong{font:700 28px/1 var(--serif);color:var(--deep);display:block;margin-bottom:6px}
+.small{font-size:14px;color:#44554f;margin-top:14px}
+.bot{background:var(--deep);color:#fff;border-radius:10px;padding:34px;display:grid;gap:12px}
+.bot h2{margin:0}.bot p{margin:0;color:#dbe8e3;max-width:36em}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.contact h3{font:700 16px/1.3 var(--sans);margin:0 0 4px;color:var(--deep)}
+.contact p{margin:0}
+footer{background:var(--deep);color:#b9cdc7;text-align:center;font-size:14px;padding:22px}
+@media(max-width:720px){.basin{grid-template-columns:1fr}.detail{position:static}section{padding:42px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<nav><div class="wrap"><b>PO &ldquo;Shifo&rdquo;</b>
+<a href="#about">About</a><a href="#approach">Our approach</a><a href="#where">Where we work</a><a href="#contact">Contact</a><a href="#bot">Telegram bot</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Climate-resilient farming, taught by farmers</h1>
+<p>PO &ldquo;Shifo&rdquo; builds community-based agro-ecological extension services across 14 jamoats of the Kafernighan River Basin, so every village has a trained neighbor to ask.</p>
+<a class="btn main" href="#bot">Open the Telegram bot</a><a class="btn alt" href="#approach">See how it works</a>
+</div></header>
+
+<section id="about"><div class="wrap">
+<h2>About Shifo</h2>
+<p class="lead">PO &ldquo;Shifo&rdquo; is a Tajik public organization based in Shahrituz, Khatlon, registered with the Ministry of Justice since 2013. We have worked with IOM since 2008 and have delivered projects for the World Bank, GIZ, IOM, the EU and Caritas Germany. Our mission is to raise legal, social, economic and environmental literacy and to support enterprise that reduces rural poverty.</p>
+<p class="lead">Smallholder farmers in the basin face heat, water scarcity, erosion and salty soils, and structured technical advice has rarely reached them. We turn the informal network of local agronomists and lead farmers into a trained, recognized extension service linked to Jamoat Water Action Plans.</p>
+<div class="stats">
+<div><strong>21</strong>demonstration plots established</div>
+<div><strong>2,300+</strong>farmers and rural producers trained</div>
+<div><strong>3,400+</strong>women reached with sex-disaggregated results</div>
+<div><strong>2008</strong>first partnership with IOM</div>
+</div></div></section>
+
+<section id="approach" class="tint"><div class="wrap">
+<h2>Our three-tier approach</h2>
+<p class="lead">Knowledge moves down three tiers, and each tier teaches the next.</p>
+<div class="tiers">
+<div class="tier"><h3>Tier one: the expert team</h3><p>Agronomists and practice specialists design each demonstration plot together with the lead farmer and teach the methods on site, by doing.</p></div>
+<div class="tier"><h3>Tier two: the lead farmer</h3><p>Owns the plot, completes training of trainers, and becomes the extension provider for the jamoat. Payment is per training round delivered.</p></div>
+<div class="tier"><h3>Tier three: the farmers of the jamoat</h3><p>Learn at the plot through seasonal Farmer Field School rounds, then ask their lead farmer for advice between rounds.</p></div>
+</div>
+<p class="note">Plots belong to farmers, not to the project, so the learning continues after the project ends.</p>
+</div></section>
+
+<section id="where"><div class="wrap">
+<h2>Where we work: 14 jamoats in 6 districts</h2>
+<p class="lead">Select a jamoat to see its farming profile. The river runs from the northern mountains to the southern lowlands.</p>
+<div class="basin">
+<div class="river" id="river" role="group" aria-label="Jamoats of the Kafernighan River Basin"></div>
+<div class="detail" aria-live="polite"><h3 id="dName"></h3><p class="where" id="dWhere"></p><p id="dProfile"></p><p class="focus" id="dFocus"></p></div>
+</div>
+<p class="small">Farming profiles are preliminary and are confirmed with each jamoat during the project&rsquo;s inception phase.</p>
+</div></section>
+
+<section class="tint"><div class="wrap">
+<h2>What the program commits to</h2>
+<div class="targets">
+<div><strong>14</strong>trained extension providers, at least 30% women</div>
+<div><strong>14</strong>demonstration plots, one in every jamoat</div>
+<div><strong>420+</strong>farmers trained, at least 30% women</div>
+<div><strong>3</strong>Farmer Field School rounds in all jamoats</div>
+</div>
+<p class="small">These are program targets for the 12-month assignment.</p>
+</div></section>
+
+<section id="bot"><div class="wrap"><div class="bot">
+<h2>Ask our Telegram bot</h2>
+<p>Farmers and extension providers can reach advisory support from their phone. Open the bot and follow the steps to register.</p>
+<p><a class="btn main" href="https://t.me/YOUR_BOT_NAME" target="_blank" rel="noopener">Open the Telegram bot</a></p>
+</div></div></section>
+
+<section id="contact" class="tint"><div class="wrap">
+<h2>Contact us</h2>
+<div class="contact">
+<div><h3>Address</h3><p>PO &ldquo;Shifo&rdquo;<br>N. Khusrav Street 34a<br>Shahrituz, Khatlon, Tajikistan</p></div>
+<div><h3>Phone</h3><p>+992 000 000 000</p></div>
+<div><h3>Email</h3><p><a href="mailto:info@example.org">info@example.org</a></p></div>
+</div></div></section>
+
+<footer>&copy; PO &ldquo;Shifo&rdquo;, Shahrituz, Republic of Tajikistan</footer>
+
+<script>
+(function(){
+var N="Erosion control, intensive gardening, water harvesting and pasture management.",
+S="Salinity management, drought-tolerant cropping, rangeland restoration and heat-adapted horticulture.";
+var D=[["Varzob","North",[["Chorbogh","Mountain valley, horticulture, erosion-prone slopes"],["Luchob","Mountain valley, orchards, spring-fed irrigation"]]],
+["Fayzobod","North",[["Qalai Dasht","Rainfed grains, degraded pasture"],["Dustmurod Ali","Rainfed cropping, livestock pressure"]]],
+["Vahdat","North",[["Romit","River valley, horticulture, apiculture potential"],["A. Abdulvosiev","Mixed cropping, pasture degradation"],["Guliston","Irrigated horticulture, water stress"],["Rajab Ismoil","Rainfed grains, fodder deficit"]]],
+["Shahrituz","South",[["Jura Nazarov","Irrigated lowland, salinity, heat"],["Talbak Sadridinov","Irrigated cropping, degraded rangeland"]]],
+["Qubodiyon","South",[["Novobod","Irrigated cotton rotation, salinity"],["Takhti Sangin","Floodplain, saline lands, horticulture"],["Utaqara Nazarov","Irrigated lowland, fodder and livestock"]]],
+["Nosiri Khusrav","South",[["Firuza","Semi-arid, degraded rangeland, drought"]]]];
+var r=document.getElementById("river"),btns=[],lastSub="";
+D.forEach(function(d){
+ if(d[1]!==lastSub){var s=document.createElement("span");s.className="sub";s.textContent=d[1]==="North"?"Northern sub-basin":"Southern sub-basin";r.appendChild(s);lastSub=d[1];}
+ var h=document.createElement("h3");h.textContent=d[0]+" district";r.appendChild(h);
+ d[2].forEach(function(j){var b=document.createElement("button");b.type="button";b.textContent=j[0];b.setAttribute("aria-pressed","false");
+  b.onclick=function(){show(b,j,d)};r.appendChild(b);btns.push([b,j,d]);});
+});
+function show(b,j,d){btns.forEach(function(x){x[0].setAttribute("aria-pressed",x[0]===b?"true":"false")});
+ document.getElementById("dName").textContent=j[0]+" jamoat";
+ document.getElementById("dWhere").textContent=d[0]+" district, "+d[1]+"ern sub-basin";
+ document.getElementById("dProfile").textContent=j[1]+".";
+ document.getElementById("dFocus").textContent="Sub-basin focus: "+(d[1]==="North"?N:S);}
+show(btns[0][0],btns[0][1],btns[0][2]);
+})();
+</script>
